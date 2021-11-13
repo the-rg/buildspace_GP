@@ -1,0 +1,5 @@
+tasks:
+  - init: sh -c "$(curl -sSfL https://release.solana.com/v1.8.3/install)"
+    command: solana config set --url localhost
+  - init: npm install -g mocha
+    command: cargo install --git https://github.com/project-serum/anchor anchor-cli --locked && anchor init solana --javascript && echo "solana-keygen new"

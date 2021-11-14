@@ -1,5 +1,5 @@
 image:
   file: .gitpod.Dockerfile
 tasks: 
-  - before: npm install @project-serum/anchor @solana/web3.js
+  - before: npm install @project-serum/anchor @solana/web3.js && cargo install --git https://github.com/project-serum/anchor anchor-cli --locked
   - init: anchor init solana --javascript && cd solana && solana-keygen new

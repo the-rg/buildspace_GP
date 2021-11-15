@@ -1,6 +1,12 @@
+.anchor
 .DS_Store
-node_modules/
-*.log
-haters/
-.idea/
 .env
+.idea/
+*.log
+**/*.rs.bk
+/.svelte-kit
+/build
+/package
+haters/
+node_modules
+target
